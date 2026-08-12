@@ -5,7 +5,7 @@ inputs:
   klayout_version:
     description: KLayout version to install
     required: false
-    default: "0.29.12"
+    default: "0.30.9"
 
 runs:
   using: composite
@@ -24,9 +24,9 @@ runs:
 
         VERSION="${{ inputs.klayout_version }}"
         DEB="klayout_${VERSION}-1_amd64.deb"
-        URL="https://github.com/TinyTapeout/klayout/releases/download/v${VERSION}/${DEB}"
+        URL="https://www.klayout.org/downloads/Ubuntu-24/${DEB}"
 
-        wget -q "${URL}" -O "${DEB}"
+        wget --no-check-certificate -q "${URL}" -O "${DEB}"
         sudo apt-get install -y "./${DEB}"
 
     - name: Install Python klayout package

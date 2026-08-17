@@ -12,4 +12,4 @@
 ### チームレイアウト一式
 - [チームKM](/member_project/KM)
 - [チームMR](/member_project/MR)
-- [ISHI会ZAWAさん](/member_project/opamp_r2r_audio_zawa)
+- [ISHI会KabechiFCさん](/member_project/opamp_r2r_audio_KabechiFC)
